@@ -15,28 +15,98 @@
         overflow-x: hidden;
         justify-content: center;
         display: flex;
+        flex-direction: column;
+        gap: 20px;
     } 
 
+    .container {
+        text-align: center;
+        max-width: 1080px;
+        margin: 0 auto;
+        padding: 30px;
+        color: #ff1493;
+        border-bottom: 2px solid #ff69b4;
+        border: 3px double #ff69b4;
+        margin-top: 30px;
+        border-radius: 60px;
+        position: relative;
+        background-color: rgb(255, 255, 255);
+    }
+
+    aside {
+        display: flex;
+        flex-shrink: 0;
+        flex-direction: column;
+        gap: 20px;
+        max-height: 1000px;
+        width: 200px;
+        background-color: rgb(255, 255, 255);
+        color: #ff1493;
+        border-bottom: 2px solid #ff69b4;
+        border: 3px double #ff69b4;
+        border-radius: 20px;
+    }
+    
     header {
-        background-image: url("");
+        display: flex;
+        flex-direction: column;
+    }
+
+    section {
+        background-color: rgba(253, 253, 253, 0.818);
+        flex: 1;
+    }
+
+    .conteudo-principal {
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+      align-items: flex-start; /* Evita que o aside estique até o final da página */
     }
 </style>
 
 <body>
 
     <header>
-
+        <div class="container" style="margin: 20px; ">
+            <h2>Bem Vindos ao Meu Site</h2>
+            <a href="https://c.tenor.com/W3B_PufXZHgAAAAC/tenor.gif">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1pjuESKXZ4yBoALw-CfgezFQRwKl7qsuIHNe2yEcbzQ&s=10" alt="" style="position: absolute; bottom: 10px; right: 10px; width: 50px; height: auto; gap: 16px; display: flex; border-radius: 30px; margin: 5px;">
+            </a>
+        </div>
     </header>
 
-    <aside>
+    <div class="conteudo-principal"> 
+        <aside>
+            <img src="https://media1.tenor.com/m/9v96yA2u6JYAAAAd/curly-mouthwashing.gif" alt="" style="height: 100px; margin: 10px; border-radius: 10px;">
+            <a href="#" style="margin: 5px; text-decoration-color: #c08eb1c9;">☻ ART</a>
+            <a href="#" style="margin: 5px; text-decoration-color: #c08eb1c9;">☻ RPG</a>
+            <a href="#" style="margin: 5px; text-decoration-color: #c08eb1c9;">☻ IRMANDADE</a>
+            <a href="#" style="margin: 5px; text-decoration-color: #c08eb1c9;">☻ interesses</a>
+            <br>
+        </aside>
 
-    </aside>
+        <section style="gap: 16px; display: flex; margin: 5px; align-items: center; display: flex; flex-direction: column;">
+            <h3 style="text-align: center; margin: 15px; color: #c08e;">Oi, apenas queria compartilhar algumas coisas aqui no neocities, quando conheci essa maravilhosa plataforma, não pulde resistir, me senti na obrigação de fazer e postar alguma coisa...
+                <br>
+                <br>
+                Fiquem a vontade em conhecer o meu site, ele está em desenvolvimento ainda rsrs ;-></h3>
+            
+            <article>
+                <a href="#">
+                    <img src="https://media.tenor.com/0vQ8mhzzh0EAAAAi/tumblr-stamp.gif" alt="">
+                </a>
+                <a href="#">
+                    <img src="https://media.tenor.com/Kf6OKLpfIFIAAAAi/tenor-gifs.gif" alt="" style="height: 30px;">
+                </a>
+                <a href="#">
+                    <img src="https://media.tenor.com/MbpSjWLYT1kAAAAi/steam.gif" alt="" style="height: 30px;">
+                </a>
 
-    <section>
-        <article>
-
-        </article>
-    </section>
+            </article>
+        </section>
+    </div>
+   
 
     <footer>
         <div class="imagem-mechendo" style="height: 100px; width: auto; object-fit: fill;">
